@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Transactions from './pages/transactions'
+import Transactions from './pages/Transactions'
 import Dashboard from './pages/Dashboard';
 
 import { Routes,Route } from 'react-router-dom';
