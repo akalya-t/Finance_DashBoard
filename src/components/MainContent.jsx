@@ -22,7 +22,7 @@ ChartJS.register(
 )
 import BarChart from './BarChart';
 import DoughnutChart from './DoughNutChart';
-import Transactions from '../pages/transactions';
+import Transactions from '../pages/Transactions';
 
 const MainContent = ({setSidebarOpen}) => {
    const transactions = useStore((state) => state.transactions)
