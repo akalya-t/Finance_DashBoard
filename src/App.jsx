@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Transactions from './pages/transactions'
+import Transactions from './pages/Transactions'
 import Dashboard from './pages/Dashboard';
 
 import { Routes,Route } from 'react-router-dom';
@@ -16,9 +16,11 @@ const App = () => {
   useEffect(() => {
     loadTransactions()
   }, []);
+  // For toggling Theme
   useEffect(() => {
-  const theme = localStorage.getItem("theme")
-  if (theme === "dark") {
+  const savedTheme = localStorage.getItem("theme")
+
+  if (savedTheme === "dark") {
     document.documentElement.classList.add("dark")
   }
 }, [])

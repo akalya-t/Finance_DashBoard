@@ -36,10 +36,10 @@ const sortedTransactions = [...filteredTransactions].sort((a, b) => {
 })
 const role = useStore((state) => state.role)
 return (
-  <div className="flex flex-col h-full">
+  <div className="flex flex-col h-full bg-white">
 
     {/* Header */}
-    <div className="flex justify-between items-center mb-2">
+    <div className="flex justify-between items-center mb-2 bg-white">
       <h3 className="font-semibold text-sm">Recent Transactions</h3>
       <div className="flex gap-2 items-center">
 

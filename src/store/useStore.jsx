@@ -7,20 +7,19 @@ const useStore = create((set) => ({
 role: "viewer",
 
 toggleTheme: () =>
-  set(() => {
-    const isDark = document.documentElement.classList.contains("dark")
+  set((state) => {
+    const newTheme = state.theme === "dark" ? "light" : "dark"
 
-    if (isDark) {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem("theme", "light")
-    } else {
+    if (newTheme === "dark") {
       document.documentElement.classList.add("dark")
-      localStorage.setItem("theme", "dark")
+    } else {
+      document.documentElement.classList.remove("dark")
     }
 
-    return { theme: isDark ? "light" : "dark" }
-  }),
+    localStorage.setItem("theme", newTheme)
 
+    return { theme: newTheme }
+  }),
 
 toggleRole: () =>
   set((state) => ({

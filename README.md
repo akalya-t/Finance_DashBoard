@@ -1,6 +1,6 @@
-# 💰 Finance Dashboard UI
+#  Finance Dashboard - 
 
-A clean and interactive **Finance Dashboard** built using React.
+A clean  **Finance Dashboard** built using ReactJs ,Vite and Tailwindcss .
 This project focuses on **UI design, state management, and data handling** without relying on a backend.
 
 ---
@@ -18,7 +18,7 @@ This project focuses on **UI design, state management, and data handling** witho
 ###  Transactions
 
 * View all transactions in a **scrollable table**
-* Add new transactions using a **form popup**
+* Add new transactions using a **form popup** 
 * Delete transactions
 * **Filter by category**
 * **Sort by date or amount**
@@ -30,23 +30,12 @@ This project focuses on **UI design, state management, and data handling** witho
 
 * **Viewer**: Can only view data
 * **Admin**: Can add and delete transactions
-* Toggle role using UI controls
-
+* Toggle role using UI controls(Button)
 ---
 
 ###  Dark / Light Mode
 
-* Toggle between dark and light themes
-* Theme preference is **persisted using localStorage**
-
----
-
-### Insights (Basic)
-
-* Charts provide visual insights into:
-
-  * Spending patterns
-  * Category distribution
+* I tried to create this feature , But I couldn't, Ive to work on this later.
 
 ---
 
@@ -71,31 +60,6 @@ This project focuses on **UI design, state management, and data handling** witho
 * **Lucide React Icons**
 
 ---
-
-## Project Structure
-
-```
-src/
-│
-├── components/
-│   ├── Sidebar.jsx
-│   ├── MainContent.jsx
-│   ├── BarChart.jsx
-│   ├── DoughnutChart.jsx
-│   └── Transactions.jsx
-│
-├── store/
-│   └── useStore.js
-│
-├── data/
-│   └── data.jsx
-│
-├── App.jsx
-└── main.jsx
-```
-
----
-
 ##  Setup Instructions
 
 1. Clone the repository
@@ -122,8 +86,7 @@ npm run dev
 ##  Approach
 
 * Used a **single source of truth (transactions)** for all UI elements
-* Derived:
-
+* Derived Values:
   * Balance
   * Income
   * Expenses
@@ -133,25 +96,10 @@ npm run dev
 
 ---
 
-##  Optional Enhancements (Future Scope)
-
-* Edit transactions
-* Export data (CSV/JSON)
-* Advanced filtering
-* Backend integration
-
----
-
-## Notes
-
-* This project uses **mock data and localStorage** instead of a backend
-* Designed to demonstrate **frontend architecture and UI thinking**
-
----
-
-## 🙌 Author
+## By
 
 **Akalya**
+As part of the assessment for Zorvyn front end dev Intern role.
 
 
 ---
